@@ -1,0 +1,77 @@
+.about-me-con img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    margin: 15rem 0 0 0;
+    border-radius: 500px;
+}
+
+.about-me-con p{
+    margin: 15rem 0 0 ;
+    text-align: left;
+    font-size: 14px;
+
+    
+}
+
+.back-to-home{
+    margin: 5rem 0 0 15rem;
+    justify-content: space-between;
+}
+
+.back-to-home a{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.back-to-home button{
+    height: 35px;
+    width: 35px;
+    border: none;
+    cursor: pointer;
+    /* margin: 0 0 0 25rem; */
+    color: #fff;
+    background-color: #004aad;
+    border-radius: 50%;
+    outline: none;    
+    display: inline-block;
+}
+
+
+
+.back-to-home i{
+    font-size: 16px;
+}
+
+.my_socials{
+    margin: 15rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.my_socials i{
+    font-size: 7rem;
+    margin: 0 2rem;
+    color: rgba(0, 0, 0, 0.7);
+    
+}
+
+/* .shadow-image{
+    background-color: #000;
+    width: 20rem;
+    height: 20rem;
+} */
+
+.my-image1{
+    animation-name:floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating{
+    from{transform: translate(0, 0px);}
+    65% {transform: translate(0, 15px);}
+    to{transform: translate(0, -0px);}
+
+}

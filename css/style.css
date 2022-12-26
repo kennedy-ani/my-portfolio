@@ -1,0 +1,568 @@
+@font-face {
+    font-family: 'nunito';
+    src: url(/css/font/Nunito-Bold.ttf);
+}
+
+body{
+    font-family: 'nunito';
+    background:linear-gradient(to right, #F5F7FA
+, #B8C6DB );
+overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in;
+    /* border: 2px solid red; */
+}
+html{
+    font-size: 67.9%;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    /* background:rgb(209, 16, 16) ; */
+    background:#004aad;
+    width: 0.5rem;
+    border-radius: 1rem;
+}
+
+/* navigation styles begin */
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.131);
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background:linear-gradient(to left,#F5F7FA
+, #B8C6DB    ) ;
+    z-index: 1;
+}
+.logo {
+    margin: 1rem 0 0 10rem;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.nav-content{
+    display: flex;
+    margin: 0 15rem 0 0;
+
+}
+
+
+
+#navBar ul li ul{
+    color: #004aad;
+    text-decoration: none;
+    display: none;
+    background-color: #fff;
+}
+
+.link-carrier > ul{
+    border-top: 7px solid #004aad;
+}
+
+#navBar ul li:hover ul{
+    display: block;
+    position: absolute;
+    left: 88%;
+    top: 60%;
+    width: 15rem;
+    padding: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top: 1rem;
+}
+
+.nav-links li{
+    font-size: 1.5rem;
+}
+
+
+.nav-links a{
+    text-decoration: none;
+}
+
+
+.color-palette{
+    display: none;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.icons li{
+    list-style: none;
+}
+
+.icons button{
+    margin: 0 1rem;    
+    height: 35px;
+    width: 35px;
+    background-color: #004aad;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    border: none;
+}
+
+.icons button:hover{
+    background-color: #004aad;
+    color: #fff;
+}
+
+.icons i{
+    font-size: 16px;
+}
+
+
+
+
+/* navigation bar styles ends */
+
+
+#home{
+    /* border: 2px solid red; */
+    margin: 5rem 10rem ;
+    padding: 0;
+    
+}
+#home p{
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.549);
+    text-align: center;
+    margin-top: -5rem;
+
+    
+} 
+
+#home img{
+    width: 20rem;
+    margin: 10rem 49rem;
+    border-radius: 500px;
+}
+
+#home a{
+    margin: -5rem 0 0 20rem;
+    
+}
+
+
+.btn{
+    text-decoration: none;
+    background: #004aad;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    margin: 0 0 0 -2rem;
+}
+
+.btn:hover{
+    transition: 0.3s;
+    letter-spacing:1rem;
+    color: white;
+}
+
+.dev-name{
+    color:#004aad;
+    font-weight: bold;
+}
+/* make the image float */
+.float-img{
+    animation-name:floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating{
+    from{transform: translate(0, 0px);}
+    65% {transform: translate(0, 15px);}
+    to{transform: translate(0, -0px);}
+
+}
+
+/* my Skills */
+
+
+.skills-and-exp h1{
+    text-align: right;
+    margin: 200px 100px 0 0;
+    font-size: 50px;
+    color: #004aad;
+}
+
+.talk-frontend-skills{
+    opacity: 1;
+    margin-left: 16rem;
+    margin-right: 14rem;
+    padding: 0;
+    transform: scale(1.2);
+}
+
+.talk-frontend-skills h2{
+    font-size: 35px;
+    color: #004aad;
+    margin: 10rem 0 2rem 10rem;
+}
+
+.talk-backend-skills h2{
+    font-size: 35px;
+    margin: 10rem 0 2rem 75rem;
+    color: #004aad;
+}
+
+.talk-backend-skills p{
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.549);
+    margin: 0 5rem 0 75rem;
+    text-align: left;
+}
+
+.talk-frontend-skills p{
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.549);
+    margin: 0 50rem 0 10rem;
+    text-align: left;
+}
+.progress{
+    margin-left: 30px;
+}
+
+.experience-part{
+    margin-top: 2rem;
+    opacity: 1;
+    /* transform: scale(1.2); */
+}
+
+.position{
+    font-size: 25px;
+    margin: 2rem 0;
+    color: #004aad;
+    font-weight: bold;
+}
+
+.time-period, .what-I-did{
+    font-size: 23px;
+    margin: 2rem 0;
+}
+.what-I-did{
+    color:rgba(0, 0, 0, 0.549);
+}
+
+.further-xp{
+    font-size: 17px;
+    margin: 7rem 0 0 10rem;
+}
+.progressive-bar{
+    margin-top: 10rem;
+    
+}
+
+.language-tags{
+    margin: 3rem 0 0 0;
+}
+
+.progress-bar{
+    margin: 0 0 0 -10rem;
+}
+.p_language{
+    margin: 5rem 1rem;
+    background-color: #004aad;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.HTML-text, .CSS-text, .JavaScript-text, .GIT-text{
+    font-size: 2rem;
+}
+.progress-section{
+    margin: 2rem 0 ;
+    opacity: 1;
+    /* transform: scale(1.2); */
+
+}
+/* .socials{
+    margin: 0 0 0 -10rem;
+} */
+.socials i{
+    font-size: 25px;
+    color: #004aad;
+    margin: 2rem 0 0 2rem;
+}
+
+.socials i:hover{
+    transform: rotate(90deg);
+    
+    
+}
+/* work */
+.work-row{
+    display: flex;
+    opacity: 1;
+    /* transform: scale(1.2); */
+    /* background-color: black; */
+    
+}
+.project-header{
+    color: #004aad;
+    text-align: right;
+    margin: 200px 100px 0 0;
+    font-size: 50px;
+    
+}
+
+.header-form{
+    color: #004aad;
+    text-align: right;
+    margin: 200px 100px 0 0;
+    font-size: 50px;
+}
+
+.my-work-projects{
+    margin: 0 0 0 15rem;
+}
+.project{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
+    margin: 5rem 2rem;
+    padding: 2rem;
+    width: 300px;
+    height: 300px;
+}
+
+#project1{
+    background: linear-gradient(to left, #414141, #000000);
+}
+
+#project1 h2{
+    color: yellow;
+    margin-left: 1rem;
+}
+
+#project1 span{
+    background-color: #fff;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 5rem;
+    color: #000;
+}
+
+#project1 i{
+    font-size: 10rem;
+    margin: 2rem 0 0 5rem;
+    color: #fff;
+}
+
+#project2{
+    background:linear-gradient(to right, #000080,#2c2cac );
+}
+
+#project2 h2{
+    color: #FFA500;
+    margin-left: 1rem;
+}
+
+#project2 span{
+    background-color: #fff;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 5rem;
+    color: #000;
+}
+
+#project2 i{
+    font-size: 10rem;
+    margin: 2rem 0 0 5rem;
+    color: #fff;
+}
+
+#project3{
+    background:#000;
+}
+
+#project3 h2{
+    color: #FFA500;
+    margin-left: 1rem;
+}
+
+#project3 span{
+    background-color: #fff;
+    padding: 0.5rem;
+    margin-top: 3rem ;
+    margin-left: 1rem;
+    border-radius: 5rem;
+    color: #000;
+}
+
+#project3 i{
+    font-size: 10rem;
+    margin: 2rem 0 0 5rem;
+    color: #fff;
+}
+
+.project a{
+    text-decoration: none;
+}
+
+.project h2{
+    color: white;
+}
+
+.project span{
+    background-color: yellow;
+}
+
+.project img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    margin: 0;
+}
+
+.project:hover{
+    /* background-color: #004aad; */
+    transition: 0.5s ease-in;
+    margin: 4rem 1rem;
+}
+
+
+/* =================== slick slide =================== */
+.slick-next{
+    /* background-color: #000; */
+    /* background-color: #004aad; */
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+
+    left: 95%;
+}
+
+.slick-prev{
+    left: 0;
+    /* background-color: #004aad; */
+    padding: 2rem;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.more-projects-btn{
+    text-decoration: none;
+    background: #004aad;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    margin: 0 0 0 45rem;
+    
+}
+.projectButton a{
+    text-decoration: none;
+    margin: 0 0 0 55rem;
+}
+
+.more-projects-btn:hover{
+    transition: 0.3s;
+    letter-spacing:1rem;
+    color: white;
+    
+}
+a:active{
+    text-decoration: none;
+}
+
+/* content style ends */
+
+#contact-form{
+    max-width: 500px;
+    margin: 15rem auto;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#client-message{
+    outline: medium;
+}
+
+.button-submit{
+    text-decoration: none;
+    background: #004aad;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    border: none;
+    margin: 2rem 0 0 17rem;
+    
+}
+
+.button-submit:hover{
+    transition: 0.3s;
+    letter-spacing:1rem;
+    color: white;
+}
+
+footer p{
+    margin: 40px 0 ;
+    text-align: center;
+}
+
+/* ===========================animation======================= */
+.carrier{
+    /* border: 2px solid red; */
+    width: 50%;
+    margin-left: 35rem;
+    flex-direction: column;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+@keyframes reveal {
+    0%{
+        transform: scale(0, .025);
+    }
+
+    100%{
+        transform: scale(1, .025);
+    }
+}
+
+@media(prefers-reduced-motion: no-preference){
+    .my-anime{
+        animation: reveal 1s 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+
+/* */
+
+
+

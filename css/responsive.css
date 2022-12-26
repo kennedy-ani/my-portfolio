@@ -1,0 +1,163 @@
+/* mobile phone */
+@media (max-width: 540px){
+
+    /* *{
+        border: 2px solid red;
+    } */
+    
+    #navBar {
+        /* display: none; */
+        width: 540px;
+    }
+
+    #navBar .logo{
+        margin: 0.5rem 0 0 3rem;
+    }
+    .nav-links{
+        margin: 0 0 0 -10rem;
+    }
+    /* intro */
+    #home{
+        /* border: 2px solid red; */
+        margin: 10rem 0 !important;
+    }
+    #home img{
+        margin: 5rem 0 0 15rem;
+    }
+
+    #home .carrier{
+        margin: 15rem 0 0 15rem;
+    }
+
+    #home .carrier a{
+        margin: 3rem 0;
+    }
+
+
+    .btn{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .progress-section{
+        padding: 1rem;
+    }
+    .progress-section span{
+        display: block;
+        margin: 0 auto;
+    }
+    /* skills */
+    #skills-experience h1{
+        margin: 0 4rem 0 0;
+    }
+
+    .talk-frontend-skills h2{
+        margin: 15rem -10rem 0 -10rem;
+        text-align: center;
+    }
+
+    .talk-frontend-skills p{
+        margin: 1rem -8rem 0 -10rem;
+        text-align: center;
+    }
+
+    .further-xp{
+        margin: 5rem 0 0 2rem;
+        padding: 3rem;
+    }
+
+    .experience-detail-con{
+        padding: 3rem;
+    }
+
+    .progress-section {
+        display: flex;
+        flex-direction: column;
+    }
+    /* projects */
+    .project-header{
+        margin: 10rem 0 0 1rem;
+    }
+    .more-projects-btn{
+        display: block;
+        margin: 5rem auto !important;
+        width: 50%;
+        text-align: center;
+        /* border: 2px solid red; */
+    }
+
+    .project{
+        margin: 4rem 0 0 -3rem;
+    }
+
+    /* contact */
+    
+    #contact-form{
+        /* border:2px solid red; */
+        margin: 0 5rem ;
+        padding: 2rem;
+        max-width: 35rem;
+        margin: 0 auto;
+        
+    }
+
+    #contact-form h2{
+        text-align: center;
+        /* border:2px solid red; */
+        width: 30rem;
+    }
+
+    #contact-form input{
+        width: 87%;
+    }
+
+    #contact-form textarea{
+        width: 87%;
+    }
+
+    .fade-in{
+        opacity: 1;
+    }
+
+    .button-submit{
+        display: block;
+        margin: 5rem auto;
+    }
+
+    /* about */
+
+    .back-to-home{
+        margin: 0;
+    }
+
+    #backtoIndexPageLink{
+        margin: 5rem 0 -10rem 0 ;
+    }
+
+    .back-to-home button{
+        /* border: 2px solid red; */
+        margin: -4rem 0 0 40rem;
+    }
+
+    .my-image1{
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+
+    .more-details-aboutMe{
+        position: absolute;
+        top: 70%;
+        padding: 3rem;
+        left: 0;
+    }
+
+    .my_socials{
+        position: absolute;
+        top: 160%;
+        padding: 5rem;
+        left: 0;
+    }
+
+    
+}
